@@ -29,7 +29,7 @@ int Height(Node *root)
 
 bool isBalanced(Node *root)
 {
-    // Time complexity is O(n)
+    // Time complexity is O(n^2)
     if (root == NULL)
     {
         return true;

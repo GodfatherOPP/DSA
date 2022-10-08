@@ -32,6 +32,7 @@ int totalNodesSum(Node *root)
     }
     return totalNodesSum(root->left) + totalNodesSum(root->right) + root->data;
 }
+
 int main()
 {
     struct Node *root = new Node(5);

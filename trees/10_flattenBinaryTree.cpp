@@ -51,6 +51,7 @@ void inorder(Node *root)
     cout << root->data << " ";
     inorder(root->right);
 }
+
 int main()
 {
 

@@ -26,6 +26,7 @@ void display_preorder(Node *root)
     display_preorder(root->left);
     display_preorder(root->right);
 }
+
 void display_postorder(Node *root)
 {
 
@@ -37,6 +38,7 @@ void display_postorder(Node *root)
     display_postorder(root->right);
     cout << root->data << " ";
 }
+
 void display_inorder(Node *root)
 {
 
@@ -48,6 +50,7 @@ void display_inorder(Node *root)
     cout << root->data << " ";
     display_inorder(root->right);
 }
+
 int searchInorder(int inorder[], int start, int end, int curr)
 {
     for (int i = start; i < end; i++)
@@ -81,6 +84,7 @@ Node *buildTreeUsingPreorderAndInorder(int preorder[], int inorder[], int start,
 
     return node;
 }
+
 Node *buildTreeUsingPostorderAndInorder(int postorder[], int inorder[], int start, int end)
 {
     if (start > end)
